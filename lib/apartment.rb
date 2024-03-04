@@ -16,7 +16,7 @@ module Apartment
   class << self
     extend Forwardable
 
-    ACCESSOR_METHODS = %i[use_schemas use_sql seed_after_create prepend_environment default_tenant
+    ACCESSOR_METHODS = %i[use_schemas use_sql seed_after_create prepend_environment default_tenant migrations_paths
                           append_environment with_multi_server_setup tenant_presence_check active_record_log].freeze
 
     WRITER_METHODS = %i[tenant_names database_schema_file excluded_models
